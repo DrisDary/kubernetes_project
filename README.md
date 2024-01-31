@@ -1,1 +1,3 @@
-# kubernetes_project
+# GitOps Project
+
+To be completed...
