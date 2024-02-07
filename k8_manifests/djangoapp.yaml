@@ -14,19 +14,19 @@ spec:
     spec:
       containers:
       - name: django-app
-        image: drisdary/django-app:versian_16
+        image: drisdary/django-app:version-16
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
         env:
         - name: DATABASE_HOST
-          value: "sqlsvr214.database.windows.net"
+          value: "sqlserver.database.windows.net"
         - name: DATABASE_USER
           value: "username"
         - name: DATABASE_PASSWORD
-          value: "pwrd4567gh#"
+          value: "password"
         - name: DATABASE_NAME
-          value: "sql123jkfsdjf23495345"
+          value: "my_db"
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
