@@ -66,7 +66,9 @@ NOTES:
 Please set appropirate names for username, password, sqlservername, database_name found in:
 
 k8_manifests\djangoapp.yaml
+
 project\project\settings.py
+
 tf_k8_project_IaC\main.tf
 
 Please condsider using secrets for the password and sqlservername and database. 
