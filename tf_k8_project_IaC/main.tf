@@ -22,16 +22,16 @@ resource "azurerm_kubernetes_cluster" "aks" {
 
 resource "azurerm_mssql_server" "db_server" {
   administrator_login = "username"
-  administrator_login_password = "pwrd4567gh#"
+  administrator_login_password = "password"
   location            = "eastus"
-  name                = "sqlsvr214"
+  name                = "sqlservername"
   resource_group_name = azurerm_resource_group.rg.name
   version             = "12.0"
 }
 
 
 resource "azurerm_mssql_database" "db" {
-  name                 = "sql123jkfsdjf23495345"
+  name                 = "database_name"
   server_id            = azurerm_mssql_server.db_server.id
   storage_account_type = "Local"
   depends_on = [

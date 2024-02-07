@@ -57,7 +57,16 @@ kubectl config set-context --current --namespace=argocd
 
 Then, using the argocd CLI add the project repo as such:
 
-argocd app create django-app --repo https://github.com/DrisDary/django_app_2_containers/k8_manifests.git --dest-server https://kubernetes.default.svc --dest-namespace default
+argocd app create django-app --repo https://github.com/DrisDary/kubernetes_project/k8_manifests.git --dest-server https://kubernetes.default.svc --dest-namespace default
 
 Running this should complete your project and you should be able to make commits to applciation and see changes in your Kubernetes cluster.
 
+NOTES:
+
+Please set appropirate names for username, password, sqlservername, database_name found in:
+
+k8_manifests\djangoapp.yaml
+project\project\settings.py
+tf_k8_project_IaC\main.tf
+
+Please condsider using secrets for the password and sqlservername and database. 

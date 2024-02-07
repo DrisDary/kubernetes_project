@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "mssql",
-        'NAME':'sql123jkfsdjf23495345',
+        'NAME':'database_name',
         'USER':'username',
-        'PASSWORD':'pwrd4567gh#',
-        'HOST':'sqlsvr214.database.windows.net',
+        'PASSWORD':'password',
+        'HOST':'sqlserver.database.windows.net',
         "PORT": "",
         "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
         },

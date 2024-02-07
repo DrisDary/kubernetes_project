@@ -20,13 +20,13 @@ spec:
         - containerPort: 8000
         env:
         - name: DATABASE_HOST
-          value: "sqlserver.database.windows.net"
+          value: "sqlservername.database.windows.net"
         - name: DATABASE_USER
           value: "username"
         - name: DATABASE_PASSWORD
           value: "password"
         - name: DATABASE_NAME
-          value: "my_db"
+          value: "database_name"
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
