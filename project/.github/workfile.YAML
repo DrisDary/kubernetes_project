@@ -1,4 +1,4 @@
-name: Djnago-app
+name: Django-app
 
 on:
   push:
