@@ -15,10 +15,10 @@ The folder called k8_manifests contains the Kubernetes Manisfest which is a depl
 
 In order for you workflow file to work you must you setup your GitHub secrets. Under repository settings you can create new secrets and please make sure that the secret name are spelt as in the workflow file. Setup the following four secrets
 
-DOCKERHUB_USERNAME
-DOCKERHUB_PASSWORD
-GIT_USERNAME 
-GIT_PASSWORD
++ DOCKERHUB_USERNAME
++ DOCKERHUB_PASSWORD
++ GIT_USERNAME 
++ GIT_PASSWORD
 
 # Step 3 - Setup ArgoCD
 
